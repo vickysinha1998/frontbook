@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="../css/style.css">
+ </head>
+   <body>
+
+
+     <div class="register-form">
+        <div id="close-register-btn" class="fas fa-times"></div>
+
+        <form action="/register"  method="POST">
+        <h3>Register</h3>
+            <span> name</span>
+            <input type="text" class="box" placeholder="Your Name" name="userName" required>
+            <span>mobile no.</span>
+            <input type="number" class="box" placeholder="Your Mob. No." name="mobileNumber" required>
+            <span>email id</span>
+            <input type="email" class="box" placeholder="Your Email Id" name="emailid" required>
+            <span>password</span>
+            <input type="password" class="box" placeholder="Enter Your Password" name="password" required>
+            <!-- <span>re-enter</span>
+        
+            <input type="password" class="box" placeholder="Re-Enter Your Password" name="confirmpassword" required> -->
+            <input type="submit" value="Register" class="btn" onclick="fnregiseter()">
+        </form>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+     <!-- custom js file link  -->
+     <script src="../javascript/script.js">
+
+      function fnregiseter(){
+        var n=document.getElementsByName('userName').value;
+        var mob=document.getElementsByName('mobileNumber').value;
+        var em=document.getElementsByName('emailid').value;
+        var pass=document.getElementsByName('password').value;
+
+        var data={
+          "userName":n,
+          "mobileNumber":mob,
+          "emailid":em,
+          "password":pass
+        }
+        var url=
+
+
+
+
+
+      }
+
+
+  
+
+
+
+
+
+
+     </script>
+    
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
